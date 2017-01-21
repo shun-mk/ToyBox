@@ -1,10 +1,3 @@
-//
-//  UITableView+Ex.swift
-//  mobiita
-//
-//  Created by 三木俊作 on 2016/11/29.
-//  Copyright © 2016年 Shunsaku Miki. All rights reserved.
-//
 
 import UIKit
 
