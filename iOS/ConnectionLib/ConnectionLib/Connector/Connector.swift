@@ -10,10 +10,23 @@ import Foundation
 
 protocol Connector {
     
+    /**
+     リクエスト実行
+     */
     func exeRequest()
     
+    /**
+     QueueType取得
+     
+     - returns: QueueType
+     */
     func getQueueType()
     
+    /**
+     リクエスト元オブジェクト
+     
+     - returns: リクエスト元オブジェクト
+     */
     func exeReqSrc() -> AnyObject?
     
 }

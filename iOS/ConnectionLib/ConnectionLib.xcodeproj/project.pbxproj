@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24217D351E50A9DB004B642A /* QueueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24217D341E50A9DB004B642A /* QueueType.swift */; };
+		24217D371E50AA41004B642A /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24217D361E50AA41004B642A /* ResponseData.swift */; };
+		24217D391E50AA87004B642A /* ResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24217D381E50AA87004B642A /* ResponseStatus.swift */; };
+		24217D3B1E50AB18004B642A /* ResponseDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24217D3A1E50AB18004B642A /* ResponseDataType.swift */; };
+		24217D3D1E50AC76004B642A /* QueueOperationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24217D3C1E50AC76004B642A /* QueueOperationType.swift */; };
+		24217D3F1E50AF2F004B642A /* HttpResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24217D3E1E50AF2F004B642A /* HttpResponseData.swift */; };
 		247936B71E476A3F00CDBD82 /* ConnectionLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 247936B51E476A3F00CDBD82 /* ConnectionLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2486C65F1E50A44100010BCF /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486C65E1E50A44100010BCF /* Connector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24217D341E50A9DB004B642A /* QueueType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueueType.swift; path = Data/QueueType.swift; sourceTree = "<group>"; };
+		24217D361E50AA41004B642A /* ResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseData.swift; path = Data/ResponseData.swift; sourceTree = "<group>"; };
+		24217D381E50AA87004B642A /* ResponseStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseStatus.swift; path = Data/ResponseStatus.swift; sourceTree = "<group>"; };
+		24217D3A1E50AB18004B642A /* ResponseDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseDataType.swift; path = Data/ResponseDataType.swift; sourceTree = "<group>"; };
+		24217D3C1E50AC76004B642A /* QueueOperationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueueOperationType.swift; path = Data/QueueOperationType.swift; sourceTree = "<group>"; };
+		24217D3E1E50AF2F004B642A /* HttpResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpResponseData.swift; path = Data/HttpResponseData.swift; sourceTree = "<group>"; };
 		247936B21E476A3F00CDBD82 /* ConnectionLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConnectionLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		247936B51E476A3F00CDBD82 /* ConnectionLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionLib.h; sourceTree = "<group>"; };
 		247936B61E476A3F00CDBD82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +80,12 @@
 		2486C65B1E50A3F100010BCF /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				24217D341E50A9DB004B642A /* QueueType.swift */,
+				24217D361E50AA41004B642A /* ResponseData.swift */,
+				24217D381E50AA87004B642A /* ResponseStatus.swift */,
+				24217D3A1E50AB18004B642A /* ResponseDataType.swift */,
+				24217D3C1E50AC76004B642A /* QueueOperationType.swift */,
+				24217D3E1E50AF2F004B642A /* HttpResponseData.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -169,6 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2486C65F1E50A44100010BCF /* Connector.swift in Sources */,
+				24217D371E50AA41004B642A /* ResponseData.swift in Sources */,
+				24217D3B1E50AB18004B642A /* ResponseDataType.swift in Sources */,
+				24217D3D1E50AC76004B642A /* QueueOperationType.swift in Sources */,
+				24217D391E50AA87004B642A /* ResponseStatus.swift in Sources */,
+				24217D3F1E50AF2F004B642A /* HttpResponseData.swift in Sources */,
+				24217D351E50A9DB004B642A /* QueueType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
