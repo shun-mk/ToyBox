@@ -20,7 +20,7 @@ protocol Connector {
      
      - returns: QueueType
      */
-    func getQueueType()
+    func getQueueType() -> QueueType
     
     /**
      リクエスト元オブジェクト
@@ -28,5 +28,7 @@ protocol Connector {
      - returns: リクエスト元オブジェクト
      */
     func exeReqSrc() -> AnyObject?
+    
+    func exeResponseCallback() -> QueueOperationType
     
 }

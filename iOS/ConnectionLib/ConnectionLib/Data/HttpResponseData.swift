@@ -24,7 +24,7 @@ open class HttpResponseData: ResponseData {
         if let error = error {
             self.setResponseError(error)
         } else {
-            // FIXME: - 矯正アンラップをなんとかしたい
+            // FIXME: - 強制アンラップをなんとかしたい
             self.setResponseResult(response!, data: data!, responseDataType: responseDataType)
         }
         switch self.status {
