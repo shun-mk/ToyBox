@@ -127,5 +127,5 @@ open class HttpResponseData: ResponseData {
     var cookies: [String: String]?
     /** Last-Modified */
     var lastModified: String?
-    
+
 }
