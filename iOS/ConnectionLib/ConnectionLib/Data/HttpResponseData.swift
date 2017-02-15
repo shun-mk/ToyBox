@@ -77,10 +77,9 @@ open class HttpResponseData: ResponseData {
         guard let responseUrl = response?.url else { return }
         
         let cookiesFields = HTTPCookie.cookies(withResponseHeaderFields: headerFields, for: responseUrl)
-        let cookies: [String: String] = cookiesFields.reduce([:]) {
-            var dict = $0
-            dict[$1.name] = $1.value
-            return dict
+        var cookies = [String: String]()
+        for cookie in cookiesFields {
+            cookies[cookie.name] = cookie.value
         }
         self.cookies = cookies
     }
