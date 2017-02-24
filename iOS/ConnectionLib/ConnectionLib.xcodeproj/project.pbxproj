@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		241E02E01E51F0740064377F /* ConnectionUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241E02DF1E51F0740064377F /* ConnectionUtility.swift */; };
 		241E02E21E51F1AB0064377F /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241E02E11E51F1AB0064377F /* QueueManager.swift */; };
+		241F001F1E602C2900634AF6 /* AbstractConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F001E1E602C2900634AF6 /* AbstractConnector.swift */; };
 		24217D351E50A9DB004B642A /* QueueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24217D341E50A9DB004B642A /* QueueType.swift */; };
 		24217D371E50AA41004B642A /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24217D361E50AA41004B642A /* ResponseData.swift */; };
 		24217D391E50AA87004B642A /* ResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24217D381E50AA87004B642A /* ResponseStatus.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		241E02DF1E51F0740064377F /* ConnectionUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionUtility.swift; path = Util/ConnectionUtility.swift; sourceTree = "<group>"; };
 		241E02E11E51F1AB0064377F /* QueueManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueueManager.swift; path = Manager/QueueManager.swift; sourceTree = "<group>"; };
+		241F001E1E602C2900634AF6 /* AbstractConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractConnector.swift; path = Connector/AbstractConnector.swift; sourceTree = "<group>"; };
 		24217D341E50A9DB004B642A /* QueueType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueueType.swift; path = Data/QueueType.swift; sourceTree = "<group>"; };
 		24217D361E50AA41004B642A /* ResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseData.swift; path = Data/ResponseData.swift; sourceTree = "<group>"; };
 		24217D381E50AA87004B642A /* ResponseStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseStatus.swift; path = Data/ResponseStatus.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				2486C65E1E50A44100010BCF /* Connector.swift */,
+				241F001E1E602C2900634AF6 /* AbstractConnector.swift */,
 			);
 			name = Connector;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				24217D371E50AA41004B642A /* ResponseData.swift in Sources */,
 				24217D3B1E50AB18004B642A /* ResponseDataType.swift in Sources */,
 				24217D3D1E50AC76004B642A /* QueueOperationType.swift in Sources */,
+				241F001F1E602C2900634AF6 /* AbstractConnector.swift in Sources */,
 				24217D391E50AA87004B642A /* ResponseStatus.swift in Sources */,
 				24217D3F1E50AF2F004B642A /* HttpResponseData.swift in Sources */,
 				241E02E01E51F0740064377F /* ConnectionUtility.swift in Sources */,
