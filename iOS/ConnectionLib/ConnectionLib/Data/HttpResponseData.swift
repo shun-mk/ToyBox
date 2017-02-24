@@ -24,8 +24,7 @@ open class HttpResponseData: ResponseData {
         if let error = error {
             self.setResponseError(error)
         } else {
-            // FIXME: - 強制アンラップをなんとかしたい
-            self.setResponseResult(response!, data: data!, responseDataType: responseDataType)
+            self.setResponseResult(response, data: data, responseDataType: responseDataType)
         }
         switch self.status {
         case .some(.success):
@@ -44,17 +43,17 @@ open class HttpResponseData: ResponseData {
         }
     }
     
-    fileprivate func setResponseResult(_ response: URLResponse, data: Data, responseDataType: [ResponseDataType]) {
+    fileprivate func setResponseResult(_ response: URLResponse?, data: Data?, responseDataType: [ResponseDataType]) {
         
-        let httpResponse = response as! HTTPURLResponse
-        self.httpStatusCode = httpResponse.statusCode
+        let httpResponse = response as? HTTPURLResponse
+        self.httpStatusCode = httpResponse?.statusCode
         
-        switch self.httpStatusCode! {
-        case 200, 304:
+        switch self.httpStatusCode {
+        case 200?, 304?:
             self.status = .success
             
             self.setCookie(httpResponse)
-            let headerFields = httpResponse.allHeaderFields as? [String: String]
+            let headerFields = httpResponse?.allHeaderFields as? [String: String]
             self.lastModified = headerFields?["Last-Modified"]
         default:
             self.status = .httpStatusCodeError
@@ -73,18 +72,16 @@ open class HttpResponseData: ResponseData {
      
      - parameter response: レスポンス
      */
-    func setCookie(_ response: HTTPURLResponse) {
+    func setCookie(_ response: HTTPURLResponse?) {
+        guard let headerFields = response?.allHeaderFields as? [String: String] else { return }
+        guard let responseUrl = response?.url else { return }
         
-        let headerFields = response.allHeaderFields as? [String: String]
-        
-        if let headerFields = headerFields {
-            var cookies = [String: String]()
-            let cookiesFields = HTTPCookie.cookies(withResponseHeaderFields: headerFields, for: response.url!)
-            for cookie: HTTPCookie in cookiesFields {
-                cookies[cookie.name] = cookie.value
-            }
-            self.cookies = cookies
+        let cookiesFields = HTTPCookie.cookies(withResponseHeaderFields: headerFields, for: responseUrl)
+        var cookies = [String: String]()
+        for cookie in cookiesFields {
+            cookies[cookie.name] = cookie.value
         }
+        self.cookies = cookies
     }
     
     /**
