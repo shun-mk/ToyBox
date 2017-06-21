@@ -9,7 +9,7 @@
 import Foundation
 
 public enum ResponseDataType: Int {
-    case Normal = 0
+    case normal = 0
     case json
     case image
     case file

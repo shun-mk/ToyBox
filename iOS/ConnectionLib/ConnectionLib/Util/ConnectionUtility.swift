@@ -10,5 +10,20 @@ import Foundation
 
 class ConnectionUtility {
     
-    
+    /**
+     ネットワーク確認
+     
+     - returns: true 接続有り
+     */
+    class func isNetWorkStatus() -> Bool {
+        let reachability: Reachability = Reachability.forInternetConnection()
+        let status: NetworkStatus = reachability.currentReachabilityStatus()
+        
+        switch status {
+        case NotReachable:
+            
+        default:
+            <#code#>
+        }
+    }
 }
